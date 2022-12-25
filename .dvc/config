@@ -1,0 +1,4 @@
+[core]
+    remote = big_bot_config.json
+['remote "big_bot_config.json"']
+    url = https://github.com/Ber-Ilya/bot.git
