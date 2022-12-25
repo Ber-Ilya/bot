@@ -4,3 +4,5 @@
     url = https://github.com/Ber-Ilya/bot.git
 ['remote "ssh-storage"']
     url = ssh://dvc@10.129.0.30/opt/datasets
+    user = mlops
+    port = 22

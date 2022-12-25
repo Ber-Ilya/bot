@@ -1,0 +1,4 @@
+outs:
+- md5: b1fbe8d5f6eaa2a198a472576d3651f5
+  size: 692929
+  path: big_bot_config.json
