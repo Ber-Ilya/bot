@@ -1,0 +1,19 @@
+stages:
+  download_dataset:
+    cmd: (
+        ssh mlops@158.160.9.122 
+        scp ~/bot/big_bot_config.json 
+
+
+        wget ${data.download_val.url} -O ${data.download_val.zip_file} &&
+        unzip ${data.download.zip_file} -d ${root_dir}/${data.download.subdir} &&
+        unzip ${data.download_val.zip_file} -d ${root_dir}/${data.download_val.subdir} &&
+        rm ${data.download.zip_file} &&
+        rm ${data.download_val.zip_file}
+      ) &> logs/download_dataset.out
+    outs:
+      - ${root_dir}/${data.download.subdir}
+      - logs/download_dataset.out
+
+
+
