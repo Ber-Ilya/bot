@@ -1,7 +1,7 @@
 stages:
   download_dataset:
     cmd: (
-        ssh mlops@158.160.9.122 
+        ssh mlops@130.193.53.150 
         scp ~/bot/big_bot_config.json 
 
 
